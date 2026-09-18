@@ -1,0 +1,4 @@
+bokeh==3.9.2
+neo4j
+networkx==3.6.1
+pandas==2.2.3
