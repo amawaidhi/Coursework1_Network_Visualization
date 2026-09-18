@@ -33,7 +33,7 @@ USERNAME = "neo4j"
 # DO NOT share your password with anyone.
 # ------------------------------------------------------------
 
-PASSWORD = "AmAwA@2005"
+PASSWORD = "ABCama24"
 
 
 driver = GraphDatabase.driver(
