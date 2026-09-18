@@ -2,6 +2,7 @@ from neo4j import GraphDatabase
 
 import networkx as nx
 
+import os
 from bokeh.io import curdoc
 from bokeh.plotting import figure
 from bokeh.models import (
@@ -24,8 +25,8 @@ from bokeh.layouts import column, row
 # 1. NEO4J CONNECTION
 # ============================================================
 
-URI = "neo4j://127.0.0.1:7687"
-USERNAME = "neo4j"
+URI = URI = os.environ.get("NEO4J_URI")
+USERNAME = USERNAME = os.environ.get("NEO4J_USERNAME")
 
 # ------------------------------------------------------------
 # IMPORTANT:
@@ -33,7 +34,7 @@ USERNAME = "neo4j"
 # DO NOT share your password with anyone.
 # ------------------------------------------------------------
 
-PASSWORD = "ABCama24"
+PASSWORD = os.environ.get("NEO4J_PASSWORD")
 
 
 driver = GraphDatabase.driver(
